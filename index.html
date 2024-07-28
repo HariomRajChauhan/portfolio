@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariom Raj Chauhan - Portfolio Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle at center, #000428, #004e92);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: glitch 1.5s infinite;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff;
+            }
+            20% {
+                text-shadow: 2px 2px #00ffff, -2px -2px #ff00ff;
+            }
+            40% {
+                text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff;
+            }
+            60% {
+                text-shadow: 2px 2px #00ffff, -2px -2px #ff00ff;
+            }
+            80% {
+                text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff;
+            }
+            100% {
+                text-shadow: 2px 2px #00ffff, -2px -2px #ff00ff;
+            }
+        }
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hariom Raj Chauhan</h1>
+        <p>Coming Soon</p>
+    </div>
+</body>
+</html>
