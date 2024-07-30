@@ -17,7 +17,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #333;
+    background: #000428;
     color: white;
 }
 nav ul li {
@@ -155,12 +155,6 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
 
 
