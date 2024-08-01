@@ -104,6 +104,18 @@ nav ul li a:hover {
     text-align: center;
 }
 
+#project_title{
+    font-size: 3em;
+    margin: 0;
+    animation: glitch 1.5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px;
+
+}
+
+
 .Projects {
     display: flex;
     justify-content: center;
