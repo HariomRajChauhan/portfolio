@@ -1,0 +1,58 @@
+.main_yt_videos {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.main_yt_videos h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main_videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.main_video {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 560px;
+}
+
+.main_video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+/* Media query for max-width: 360px */
+@media (max-width: 360px) {
+    .main_yt_videos {
+        padding: 10px;
+    }
+
+    .main_yt_videos h1 {
+        font-size: 24px;
+    }
+
+    .main_videos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .main_video {
+        padding: 5px;
+    }
+
+    .main_video iframe {
+        height: 200px;
+    }
+}
