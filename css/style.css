@@ -261,6 +261,34 @@ footer {
 }
 
 
+/* Paragraph Decoration */
+.paragraphDec {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #004e92;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.seemore {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #004e92;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.seemore:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
 
 
 
