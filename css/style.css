@@ -261,6 +261,23 @@ footer {
 }
 
 
+/* github lai add gadai */
+.git_batch
+{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #004e92;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+}
+
+
+
+
+
 /* Paragraph Decoration */
 .paragraphDec {
     font-family: 'Arial', sans-serif;
