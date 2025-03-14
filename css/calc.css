@@ -46,3 +46,46 @@
 #features li {
     transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
+
+
+@media screen and (max-width: 768px){
+    #features{
+        font-size: 0.7rem;
+        align-items: center;
+    }
+
+    #features li{
+        font-size: 0.7rem;
+        align-items: center;
+    }
+
+    #features li:hover{
+        font-size: 0.7rem;
+    }
+
+    #features li {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    }
+
+
+}
+
+@media screen and (max-width: 412px){
+    #features{
+        width: 90%;
+        font-size: 0.7rem;
+    }
+
+    #features li{
+        font-size: 0.7rem;
+    }
+
+    #features li:hover{
+        font-size: 0.7rem;
+    }
+
+    #features li {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    }
+
+}
