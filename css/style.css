@@ -62,6 +62,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .card h2 {
@@ -361,12 +362,26 @@ footer {
 
 @media (max-width: 360px) {
     nav {
-        flex-direction: column;
-        /* align-items: flex-start; */
-        padding: 10px;
+        display: flex; 
+        flex-direction: column; 
+        grid-auto-columns: 1fr;
+        justify-content: center; 
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        
     }
 
     .logo {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .menu {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
