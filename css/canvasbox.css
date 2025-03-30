@@ -1,0 +1,22 @@
+canvas{
+    display: block;
+    margin: 20px auto 0 auto;
+    border: 1px solid #00eeff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(47, 53, 50);
+}
+
+
+
+
+
+footer {
+    bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px 0px 3px 0px;
+}
