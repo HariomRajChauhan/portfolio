@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Coming Soon</title>
+    <title>Basic Calculator - Hariom Raj Chauhan</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/calc.css">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-right">
             <h4>HARIOM</h4>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../videos.html">Videos</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../projects.html" class="nav-link">Projects</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li><a href="../videos.html" class="nav-link">Videos</a></li>
             </ul>
+        </div>
     </nav>
 
     <section>
@@ -81,15 +84,7 @@
                     <li>Simple and easy to use</li>
                     <li>Perform basic arithmetic operations</li>
                     <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
-                    <li>Can be used to perform simple calculations</li>
+                    <li>Build by JavaScript</li>
                     
                 </ul>
                 </div>
@@ -108,30 +103,44 @@
 
 
     <footer>
-
         <div class="footer">
-            <ul>
-                <li>
-                    <img src="../images/github.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://github.com/HariomRajChauhan">Github</a>
+            <ul class="social-links">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/HariomRajChauhan" class="social-link" target="_blank">
+                        <img src="../images/github.png" alt="Github" class="footer_logo">
+                        <span>Github</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="../images/ytlogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.youtube.com/@techhrch">Youtube</a>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.youtube.com/@techhrch" class="social-link" target="_blank">
+                        <img src="../images/ytlogo.png" alt="Youtube" class="footer_logo">
+                        <span>Youtube</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="../images/linkedin.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.linkedin.com/in/hariomrajchauhan/">Linkedin</a>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.linkedin.com/in/hariomrajchauhan/" class="social-link" target="_blank">
+                        <img src="../images/linkedin.png" alt="LinkedIn" class="footer_logo">
+                        <span>LinkedIn</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="../images/facebookLogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="#contacts">Facebook</a>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="social-link">
+                        <img src="../images/facebookLogo.png" alt="Facebook" class="footer_logo">
+                        <span>Facebook</span>
+                    </a>
                 </li>
             </ul>
-            <p>&copy; 2024 Hariom Raj Chauhan</p>
+            <p class="copyright">&copy; 2024 Hariom Raj Chauhan. All rights reserved.</p>
+        </div>
     </footer>
     <script src="../js/script.js"></script>
-
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 
 </html>

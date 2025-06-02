@@ -4,71 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Coming Soon</title>
+    <title>Contact - Hariom Raj Chauhan</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
-
-
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-right">
             <h4>HARIOM</h4>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="videos.html" class="nav-link">Videos</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
+        </div>
     </nav>
 
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h1>Get in Touch</h1>
+                <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to drop me a message!</p>
+                
+                <ul class="contact-details">
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>Purwanchal University, Dharan</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-circle">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>chauhanhariomraj7@gmail.com</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+977 9811114351</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-circle">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <span>www.hariomchauhan.com.np</span>
+                    </li>
+                </ul>
+            </div>
 
-    
-    <section class="contact" id="contact">
-        <h1>Contact</h1>
-        <form action="">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="22" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+            <form class="contact-form glass-effect" data-aos="fade-left">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
-
-
-
-
-
-
-
     <footer>
-
         <div class="footer">
-            <ul>
-                <li>
-                    <img src="./images/github.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://github.com/HariomRajChauhan">Github</a>
+            <ul class="social-links">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/HariomRajChauhan" class="social-link" target="_blank">
+                        <img src="./images/github.png" alt="Github" class="footer_logo">
+                        <span>Github</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/ytlogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.youtube.com/@techhrch">Youtube</a>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.youtube.com/@techhrch" class="social-link" target="_blank">
+                        <img src="./images/ytlogo.png" alt="Youtube" class="footer_logo">
+                        <span>Youtube</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/linkedin.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.linkedin.com/in/hariomrajchauhan/">Linkedin</a>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.linkedin.com/in/hariomrajchauhan/" class="social-link" target="_blank">
+                        <img src="./images/linkedin.png" alt="LinkedIn" class="footer_logo">
+                        <span>LinkedIn</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/facebookLogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="#contacts">Facebook</a>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="social-link">
+                        <img src="./images/facebookLogo.png" alt="Facebook" class="footer_logo">
+                        <span>Facebook</span>
+                    </a>
                 </li>
             </ul>
-            <p>&copy; 2024 Hariom Raj Chauhan</p>
+            <p class="copyright">&copy; 2024 Hariom Raj Chauhan. All rights reserved.</p>
+        </div>
     </footer>
 
-
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 
 </html>

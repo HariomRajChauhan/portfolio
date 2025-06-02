@@ -4,108 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Coming Soon</title>
+    <title>Videos - Hariom Raj Chauhan</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/videostyle.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-
-
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-right">
             <h4>HARIOM</h4>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#profolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="videos.html" class="nav-link active">Videos</a></li>
             </ul>
+        </div>
     </nav>
 
+    <main class="videos-section">
+        <div class="section-header" data-aos="fade-up">
+            <h1>Featured Videos</h1>
+            <p>Explore my educational content and tutorials</p>
+        </div>
 
-    <main class="main_yt_videos">
-        <h1>Videos</h1>
-        <div class="main_videos">
-            <div class="main_video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/j3CWxxfGII8?si=uLZ78lhBDJfZ9PSe"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-controls" data-aos="fade-up">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search videos..." id="videoSearch">
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                <button class="filter-btn" data-filter="educational">Educational</button>
+                <button class="filter-btn" data-filter="project">Projects</button>
+            </div>
+        </div>
+
+        <div class="videos-grid">
+            <!-- Loading state for videos -->
+            <div class="loading-state" id="loadingState">
+                <div class="spinner"></div>
+                <p>Loading videos...</p>
             </div>
 
-            <div class= "main_video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hv3iCYFJBwo?si=kKwLjWbxtjTCx4Ca"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-card" data-aos="fade-up" data-category="tutorial" data-video-id="j3CWxxfGII8">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/j3CWxxfGII8/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Loading...</h3>
+                    <p>Loading video information...</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-tag"></i> Tutorial</span>
+                        <a href="https://www.youtube.com/watch?v=j3CWxxfGII8" target="_blank" class="watch-btn">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class= "main_video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Uv5sEXwIkuE?si=UbZVTlO_ROC4l9yL"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-card" data-aos="fade-up" data-category="educational" data-video-id="hv3iCYFJBwo">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/hv3iCYFJBwo/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Loading...</h3>
+                    <p>Loading video information...</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-tag"></i> Educational</span>
+                        <a href="https://www.youtube.com/watch?v=hv3iCYFJBwo" target="_blank" class="watch-btn">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="main_video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/N3U0JEzEoDM?si=QT-n2at59QzqHeit"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-card" data-aos="fade-up" data-category="project" data-video-id="Uv5sEXwIkuE">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/Uv5sEXwIkuE/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Loading...</h3>
+                    <p>Loading video information...</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-tag"></i> Project</span>
+                        <a href="https://www.youtube.com/watch?v=Uv5sEXwIkuE" target="_blank" class="watch-btn">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="main_video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XhiyZTUb5Zk?si=KGX6MOy32XCi6kQK"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-card" data-aos="fade-up" data-category="tutorial" data-video-id="N3U0JEzEoDM">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/N3U0JEzEoDM/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Loading...</h3>
+                    <p>Loading video information...</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-tag"></i> Tutorial</span>
+                        <a href="https://www.youtube.com/watch?v=N3U0JEzEoDM" target="_blank" class="watch-btn">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="main_video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dh97FMd1qVo?si=3mHpnLAvpWGm-f17"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-card" data-aos="fade-up" data-category="educational" data-video-id="XhiyZTUb5Zk">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/XhiyZTUb5Zk/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Loading...</h3>
+                    <p>Loading video information...</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-tag"></i> Educational</span>
+                        <a href="https://www.youtube.com/watch?v=XhiyZTUb5Zk" target="_blank" class="watch-btn">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="main_video">
-
+            <div class="video-card" data-aos="fade-up" data-category="project" data-video-id="Dh97FMd1qVo">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/Dh97FMd1qVo/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Loading...</h3>
+                    <p>Loading video information...</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-tag"></i> Project</span>
+                        <a href="https://www.youtube.com/watch?v=Dh97FMd1qVo" target="_blank" class="watch-btn">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
-
         </div>
     </main>
 
-
-
     <footer>
-
         <div class="footer">
-            <ul>
-                <li>
-                    <img src="./images/github.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://github.com/HariomRajChauhan">Github</a>
+            <ul class="social-links">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/HariomRajChauhan" class="social-link" target="_blank">
+                        <img src="./images/github.png" alt="Github" class="footer_logo">
+                        <span>Github</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/ytlogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.youtube.com/@techhrch">Youtube</a>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.youtube.com/@techhrch" class="social-link" target="_blank">
+                        <img src="./images/ytlogo.png" alt="Youtube" class="footer_logo">
+                        <span>Youtube</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/linkedin.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.linkedin.com/in/hariomrajchauhan/">Linkedin</a>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.linkedin.com/in/hariomrajchauhan/" class="social-link" target="_blank">
+                        <img src="./images/linkedin.png" alt="LinkedIn" class="footer_logo">
+                        <span>LinkedIn</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/facebookLogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="#contacts">Facebook</a>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="social-link">
+                        <img src="./images/facebookLogo.png" alt="Facebook" class="footer_logo">
+                        <span>Facebook</span>
+                    </a>
                 </li>
             </ul>
-            <p>&copy; 2024 Hariom Raj Chauhan</p>
+            <p class="copyright">&copy; 2024 Hariom Raj Chauhan. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
 
+        // Load YouTube API
+        function loadYouTubeAPI() {
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+
+        // Handle YouTube API load error
+        window.onYouTubeIframeAPIReady = function() {
+            console.log('YouTube API loaded successfully');
+        };
+
+        window.addEventListener('error', function(e) {
+            if (e.target.src && e.target.src.includes('youtube.com')) {
+                console.error('Error loading YouTube API:', e);
+                alert('Error loading YouTube player. Please check your internet connection and try again.');
+            }
+        }, true);
+
+        // Load YouTube API after page loads
+        window.addEventListener('load', loadYouTubeAPI);
+
+        // Video filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const videoCards = document.querySelectorAll('.video-card');
+        const searchInput = document.getElementById('videoSearch');
+
+        function filterVideos(category) {
+            videoCards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filterVideos(btn.dataset.filter);
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            videoCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script src="js/youtube.js"></script>
+    <script src="js/videoPlayer.js"></script>
 </body>
 
 </html>

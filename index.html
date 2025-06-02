@@ -4,108 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Coming Soon</title>
+    <title>Hariom Raj Chauhan - Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
-
-
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-right">
             <h4>HARIOM</h4>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="videos.html" class="nav-link">Videos</a></li>
             </ul>
+        </div>
     </nav>
 
-
-
     <section class="hero" id="home">
-
-        <div class="container">
-            <h1>Hariom Raj Chauhan</h1>
-            <p>Coming Soon</p>
+        <div class="container" data-aos="fade-up">
+            <h1 class="glitch-text">Hariom Raj Chauhan</h1>
+            <p class="typewriter">Developer • Creator • Innovator</p>
+            <div class="cta-buttons">
+                <a href="#project" class="cta-primary">View Projects</a>
+                <a href="#contact" class="cta-secondary">Get in Touch</a>
+            </div>
         </div>
     </section>
 
-
-
-    <div>
+    <div class="section-title" data-aos="fade-up">
         <h1 id="project_title">My Projects</h1>
+        <div class="underline"></div>
     </div>
+
     <section class="Projects" id="project">
-
-        <div class="card">
-            <img src="./images/project1.jpg" alt="">
-            <h3>Python Calculator</h3>
-            <p class="paragraphDec">A basic GUI calculator application with customizable themes and basic calculator functionalities like addition, subtraction, multiplication, division, and number entry. The GUI is created using frames and buttons arranged in a structured layout, providing an interactive and user-friendly experience
-            </p>
-            <a class="seemore" href="./projects/basicCalculator.html">See More</a>
+        <div class="card" data-aos="fade-up">
+            <div class="card-image">
+                <img src="./images/project1.jpg" alt="Python Calculator">
+            </div>
+            <div class="card-content">
+                <h3>Python Calculator</h3>
+                <p class="paragraphDec">A basic GUI calculator application with customizable themes and basic calculator functionalities like addition, subtraction, multiplication, division, and number entry. The GUI is created using frames and buttons arranged in a structured layout, providing an interactive and user-friendly experience</p>
+                <a class="seemore" href="./projects/basicCalculator.html">
+                    <span>See More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="./images/project2.jpg" alt="">
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-image">
+                <img src="./images/project2.jpg" alt="Project 2">
+            </div>
+            <div class="card-content">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <a class="seemore" href="#">
+                    <span>Coming Soon</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="./images/project3.jpg" alt="">
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-image">
+                <img src="./images/project3.jpg" alt="Project 3">
+            </div>
+            <div class="card-content">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <a class="seemore" href="#">
+                    <span>Coming Soon</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="./images/project4.jpg" alt="">
-            <h3>Project 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-image">
+                <img src="./images/project4.jpg" alt="Project 4">
+            </div>
+            <div class="card-content">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <a class="seemore" href="#">
+                    <span>Coming Soon</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h1>Contact</h1>
-        <form action="">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="22" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
+    <section class="contact" id="contact" data-aos="fade-up">
+        <div class="section-title">
+            <h1>Get in Touch</h1>
+            <div class="underline"></div>
+        </div>
+        <form class="contact-form" action="">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </section>
 
-
-
     <footer>
-
         <div class="footer">
-            <ul>
-                <li>
-                    <img src="./images/github.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://github.com/HariomRajChauhan">Github</a>
+            <ul class="social-links">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/HariomRajChauhan" class="social-link">
+                        <img src="./images/github.png" alt="Github" class="footer_logo">
+                        <span>Github</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/ytlogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.youtube.com/@techhrch">Youtube</a>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.youtube.com/@techhrch" class="social-link">
+                        <img src="./images/ytlogo.png" alt="Youtube" class="footer_logo">
+                        <span>Youtube</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/linkedin.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="https://www.linkedin.com/in/hariomrajchauhan/">Linkedin</a>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.linkedin.com/in/hariomrajchauhan/" class="social-link">
+                        <img src="./images/linkedin.png" alt="LinkedIn" class="footer_logo">
+                        <span>LinkedIn</span>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/facebookLogo.png" alt="youtubeLogo" class="footer_logo">
-                    <a href="#contacts">Facebook</a>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <a href="#contacts" class="social-link">
+                        <img src="./images/facebookLogo.png" alt="Facebook" class="footer_logo">
+                        <span>Facebook</span>
+                    </a>
                 </li>
             </ul>
-            <p>&copy; 2024 Hariom Raj Chauhan</p>
+            <p class="copyright">&copy; 2024 Hariom Raj Chauhan</p>
+        </div>
     </footer>
 
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
 
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class to navigation links on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
